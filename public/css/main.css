@@ -10,8 +10,8 @@ body {
 }
 
 .mona-images {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 200px;
     border: 8px solid #fff;
 }
 
@@ -22,6 +22,13 @@ body {
 .haikus {
     font-size: 18px;
     white-space: pre-wrap;
+}
+
+.haikus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
