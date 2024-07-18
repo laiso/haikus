@@ -10,16 +10,18 @@
   </head>
   <body>
     <h1>Haikus for Mona</h1>
-    <div class="haikus-grid">
+    <div class="haikus-flex">
       <% for(var i=0; i < haikus.length; i++) { %>
-        <img
-          class="mona-images"
-          src="images/<%= haikus[i].image %>" />
-        <div 
-          class="haiku-containers">
-          <p 
-            class="haikus"
-          ><%- haikus[i].text %></p>
+        <div class="haiku-item">
+          <img
+            class="mona-images"
+            src="images/<%= haikus[i].image %>" />
+          <div 
+            class="haiku-text-container">
+            <p 
+              class="haikus"
+            ><%- haikus[i].text %></p>
+          </div>
         </div>
       <% } %>
     </div>
