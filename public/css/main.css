@@ -15,7 +15,14 @@ body {
     border: 8px solid #fff;
 }
 
-.haiku-containers {
+.haiku-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.haiku-text-container {
     padding: 10px 0px 20px 0px;
 }
 
@@ -24,15 +31,16 @@ body {
     white-space: pre-wrap;
 }
 
-.haikus-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.haikus-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-    .june-images {
+    .mona-images {
         max-width: 340px;
         max-height: 340px;
     }
